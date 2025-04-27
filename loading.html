@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="admin/VIBECORE.png">
+    <title>VibeCore - Betöltés</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #201e30;
+            overflow: hidden;
+        }
+
+        .background-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            opacity: 0.5;
+            filter: blur(100px);
+            animation: gradientAnimation 15s ease infinite;
+            z-index: 0;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .main-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            overflow: hidden;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #company-name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+            text-align: center;
+        }
+
+        #welcome-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            display: none;
+            width: 100%;
+            margin: 0;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translate(-50%, 100%);
+                opacity: 0;
+            }
+            to {
+                transform: translate(-50%, -50%);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUpOut {
+            from {
+                transform: translate(-50%, -50%);
+                opacity: 1;
+            }
+            to {
+                transform: translate(-50%, -200%);
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+            }
+        }
+
+        .skip-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 2;
+            animation: borderPulse 2s infinite;
+        }
+
+        .skip-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        @keyframes borderPulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="main-content">
+        <div class="logo-container">
+            <div id="company-name"></div>
+        </div>
+        <h1 id="welcome-text"></h1>
+    </div>
+    <button class="skip-button" onclick="skipAnimation()">Kihagyás</button>
+
+    <script>
+        const welcomeMessages = [
+            { text: "Üdvözöljük a VibeCore-nál!", skipText: "Kihagyás" },
+            { text: "Welcome to VibeCore!", skipText: "Skip" },
+            { text: "Vitajte v VibeCore!", skipText: "Preskočiť" },
+            { text: "Willkommen bei VibeCore!", skipText: "Überspringen" }
+        ];
+
+        let currentMessageIndex = 0;
+        const welcomeText = document.getElementById('welcome-text');
+        const skipButton = document.querySelector('.skip-button');
+        const companyName = document.getElementById('company-name');
+        const text = "VibeCore";
+        let index = 0;
+
+        function typeEffect() {
+            if (index < text.length) {
+                companyName.textContent += text[index];
+                index++;
+                setTimeout(typeEffect, 120);
+            } else {
+                setTimeout(() => {
+                    companyName.style.animation = 'fadeOut 0.5s forwards';
+                    setTimeout(() => {
+                        companyName.style.display = 'none';
+                        welcomeText.style.display = 'block';
+                        showWelcomeMessages();
+                    }, 500);
+                }, 1000);
+            }
+        }
+
+        function showWelcomeMessages() {
+            if (currentMessageIndex < welcomeMessages.length) {
+                welcomeText.style.animation = 'slideUp 0.5s forwards';
+                welcomeText.textContent = welcomeMessages[currentMessageIndex].text;
+                skipButton.textContent = welcomeMessages[currentMessageIndex].skipText;
+
+                setTimeout(() => {
+                    welcomeText.style.animation = 'slideUpOut 0.5s forwards';
+                    currentMessageIndex++;
+                    if (currentMessageIndex < welcomeMessages.length) {
+                        setTimeout(showWelcomeMessages, 500);
+                    } else {
+                        // Azonnal átirányítunk, amint az utolsó üzenet eltűnt
+                        fetch('set_loading_completed.php')
+                            .then(() => {
+                                window.location.href = 'home.php';
+                            });
+                    }
+                }, 2000);
+            }
+        }
+
+        function skipAnimation() {
+            // Beállítjuk a session változót
+            fetch('set_loading_completed.php')
+                .then(() => {
+                    window.location.href = 'home.php';
+                });
+        }
+
+        // Indítjuk a beírás effektet
+        typeEffect();
+    </script>
+</body>
+</html>

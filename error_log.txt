@@ -1,0 +1,1 @@
+[06-Apr-2025 17:29:46 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\Vizsga_oldal\includes\config.php on line 10

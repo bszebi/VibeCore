@@ -1,0 +1,28 @@
+Adatvédelmi Szabályzat
+
+1. Bevezetés
+Ez az adatvédelmi szabályzat tájékoztatást nyújt arról, hogyan gyűjtjük és kezeljük az Ön személyes adatait a VibeCore rendszer használata során.
+
+2. Cookie-k használata
+Weboldalunk cookie-kat (sütiket) használ a felhasználói élmény javítása érdekében. A cookie-k olyan kis szöveges fájlok, amelyeket az Ön eszköze tárol.
+
+3. Milyen cookie-kat használunk?
+- Munkamenet sütik: A weboldal megfelelő működéséhez szükségesek
+- Funkcionális sütik: A felhasználói beállítások megjegyzéséhez
+- Analitikai sütik: A weboldal használatának elemzéséhez
+
+4. Az Ön jogai
+- Hozzáférhet a tárolt személyes adataihoz
+- Kérheti adatai helyesbítését vagy törlését
+- Visszavonhatja a cookie-k használatához adott hozzájárulását
+
+5. Kapcsolat
+Ha kérdése van az adatvédelmi szabályzatunkkal kapcsolatban, kérjük, vegye fel velünk a kapcsolatot.
+
+6. Az adatok védelme
+Minden szükséges technikai és szervezési intézkedést megteszünk az Ön személyes adatainak védelme érdekében.
+
+7. Módosítások
+Fenntartjuk a jogot ezen szabályzat módosítására. A változásokról értesítjük felhasználóinkat.
+
+Utolsó frissítés: 2024.03.21 
