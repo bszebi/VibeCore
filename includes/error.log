@@ -1,0 +1,4 @@
+[10-Feb-2025 19:50:28 Europe/Budapest] PHP Fatal error:  Uncaught Error: Class "Database" not found in C:\xampp\htdocs\Vizsga_oldal\includes\delete_account.php:37
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Vizsga_oldal\includes\delete_account.php on line 37

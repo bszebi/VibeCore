@@ -1,0 +1,1256 @@
+/* Dark mode alapstílusok */
+.dark-mode {
+    background: #1e2124 !important;
+    color: #ffffff !important;
+}
+
+/* Header dark mode */
+.dark-mode .main-header {
+    background: #2c3e50 !important;
+    color: #ffffff !important;
+}
+
+/* Dropdown menük dark mode */
+.dark-mode .dropdown-content,
+.dark-mode .dropdown-menu {
+    background: #2c3e50 !important;
+    min-width: 160px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+    z-index: 1000 !important;
+    margin-top: 0.2rem !important;
+}
+
+/* Dropdown linkek dark mode */
+.dark-mode .dropdown-content a,
+.dark-mode .dropdown-menu a {
+    color: #ffffff !important;
+    padding: 0.75rem 1.5rem !important;
+    text-decoration: none !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    white-space: nowrap !important;
+}
+
+/* Dropdown hover effektek */
+.dark-mode .dropdown-content a:hover,
+.dark-mode .dropdown-menu a:hover {
+    background-color: #34495e !important;
+    color: #ffffff !important;
+}
+
+/* Dropdown ikonok színe */
+.dark-mode .dropdown-content a i,
+.dark-mode .dropdown-menu a i {
+    width: 20px !important;
+    text-align: center !important;
+    color: #ffffff !important;
+}
+
+/* Konténerek dark mode */
+.dark-mode .profile-container,
+.dark-mode .settings-menu,
+.dark-mode .settings-content,
+.dark-mode .content-section,
+.dark-mode .card,
+.dark-mode .sidebar,
+.dark-mode .siebear-item,
+.dark-mode .container,
+.dark-mode .main-container,
+.dark-mode .project-container,
+.dark-mode .task-container,
+.dark-mode .form-container,
+.dark-mode .login-container,
+.dark-mode .register-container,
+.dark-mode .modal-container,
+.dark-mode .settings-container,
+.dark-mode .confirmation-box,
+.dark-mode .info-box,
+.dark-mode .content-box,
+.dark-mode .box,
+.dark-mode .wrapper,
+.dark-mode .section,
+.dark-mode .panel,
+.dark-mode .dashboard-container,
+.dark-mode .list-container,
+.dark-mode .grid-container,
+.dark-mode .flex-container,
+.dark-mode div[class*="container"],
+.dark-mode div[class*="wrapper"],
+.dark-mode div[class*="section"],
+.dark-mode div[class*="box"],
+.dark-mode div[class*="content"],
+.dark-mode div[class*="panel"] {
+    background: transparent !important;
+    color: #ffffff !important;
+    border-color: #465c71 !important;
+}
+
+/* Általános háttérszín override minden elemre */
+.dark-mode * {
+    background-color: transparent;
+}
+
+/* Profil specifikus elemek */
+.dark-mode [class*="profile"],
+.dark-mode [class*="info"],
+.dark-mode [class*="data"],
+.dark-mode [class*="section"],
+.dark-mode [class*="container"],
+.dark-mode [class*="box"],
+.dark-mode [class*="content"],
+.dark-mode [class*="wrapper"],
+.dark-mode [class*="panel"] {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border-color: #465c71 !important;
+}
+
+/* Input mezők és form elemek */
+.dark-mode input,
+.dark-mode select,
+.dark-mode textarea,
+.dark-mode .form-control,
+.dark-mode [class*="input"] {
+    background-color: #34495e !important;
+    color: #ffffff !important;
+    border: 1px solid #465c71 !important;
+}
+
+/* Fehér hátterű elemek felülírása */
+.dark-mode [style*="background"],
+.dark-mode [style*="background-color"] {
+    background-color: #2c3e50 !important;
+}
+
+/* Body és html override */
+.dark-mode body,
+.dark-mode html {
+    background-color: #1e2124 !important;
+}
+
+/* Form elemek dark mode */
+.dark-mode input:focus,
+.dark-mode select:focus,
+.dark-mode textarea:focus {
+    border-color: #3498db !important;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2) !important;
+}
+
+/* Gombok dark mode */
+.dark-mode .btn,
+.dark-mode button,
+.dark-mode input[type="button"],
+.dark-mode input[type="submit"],
+.dark-mode input[type="reset"],
+.dark-mode .btn-update,
+.dark-mode .btn-primary,
+.dark-mode .details-btn,
+.dark-mode .nav-btn,
+.dark-mode .info-btn,
+.dark-mode a.btn,
+.dark-mode a[class*="btn"],
+.dark-mode a.details-btn,
+.dark-mode .dashboard-cards .card .details-btn,
+.dark-mode .dashboard-cards .details-btn,
+.dark-mode .card .details-btn {
+    background: #3498db !important;
+    color: #ffffff !important;
+    border-color: #3498db !important;
+    text-decoration: none !important;
+}
+
+.dark-mode .btn:hover,
+.dark-mode button:hover,
+.dark-mode input[type="button"]:hover,
+.dark-mode input[type="submit"]:hover,
+.dark-mode input[type="reset"]:hover,
+.dark-mode .btn-update:hover,
+.dark-mode .btn-primary:hover,
+.dark-mode .details-btn:hover,
+.dark-mode .nav-btn:hover,
+.dark-mode .info-btn:hover,
+.dark-mode a.btn:hover,
+.dark-mode a[class*="btn"]:hover,
+.dark-mode a.details-btn:hover,
+.dark-mode .dashboard-cards .card .details-btn:hover,
+.dark-mode .dashboard-cards .details-btn:hover,
+.dark-mode .card .details-btn:hover {
+    background: #2980b9 !important;
+    color: #ffffff !important;
+    border-color: #2980b9 !important;
+    text-decoration: none !important;
+}
+
+/* Veszélyes műveletek gombjai (piros gombok) */
+.dark-mode .btn-delete,
+.dark-mode .delete-btn,
+.dark-mode .deactivate-btn,
+.dark-mode .btn-danger,
+.dark-mode .danger {
+    background: #dc3545 !important;
+    color: #ffffff !important;
+    border-color: #dc3545 !important;
+}
+
+.dark-mode .btn-delete:hover,
+.dark-mode .delete-btn:hover,
+.dark-mode .deactivate-btn:hover,
+.dark-mode .btn-danger:hover,
+.dark-mode .danger:hover {
+    background: #c82333 !important;
+    color: #ffffff !important;
+    border-color: #bd2130 !important;
+}
+
+/* Másodlagos gombok */
+.dark-mode .btn-secondary,
+.dark-mode .secondary-btn {
+    background: #6c757d !important;
+    color: #ffffff !important;
+    border-color: #6c757d !important;
+}
+
+.dark-mode .btn-secondary:hover,
+.dark-mode .secondary-btn:hover {
+    background: #5a6268 !important;
+    color: #ffffff !important;
+    border-color: #545b62 !important;
+}
+
+/* Sikeres műveletek gombjai */
+.dark-mode .btn-success,
+.dark-mode .success-btn {
+    background: #28a745 !important;
+    color: #ffffff !important;
+    border-color: #28a745 !important;
+}
+
+.dark-mode .btn-success:hover,
+.dark-mode .success-btn:hover {
+    background: #218838 !important;
+    color: #ffffff !important;
+    border-color: #1e7e34 !important;
+}
+
+/* Figyelmeztető gombok */
+.dark-mode .btn-warning,
+.dark-mode .warning-btn {
+    background: #ffc107 !important;
+    color: #000000 !important;
+    border-color: #ffc107 !important;
+}
+
+.dark-mode .btn-warning:hover,
+.dark-mode .warning-btn:hover {
+    background: #e0a800 !important;
+    color: #000000 !important;
+    border-color: #d39e00 !important;
+}
+
+/* Info gombok */
+.dark-mode .btn-info,
+.dark-mode .info-btn {
+    background: #17a2b8 !important;
+    color: #ffffff !important;
+    border-color: #17a2b8 !important;
+}
+
+.dark-mode .btn-info:hover,
+.dark-mode .info-btn:hover {
+    background: #138496 !important;
+    color: #ffffff !important;
+    border-color: #117a8b !important;
+}
+
+/* Körvonal gombok */
+.dark-mode .btn-outline-primary {
+    color: #3498db !important;
+    border-color: #3498db !important;
+    background: transparent !important;
+}
+
+.dark-mode .btn-outline-primary:hover {
+    color: #ffffff !important;
+    background: #3498db !important;
+    border-color: #3498db !important;
+}
+
+.dark-mode .btn-outline-danger {
+    color: #dc3545 !important;
+    border-color: #dc3545 !important;
+    background: transparent !important;
+}
+
+.dark-mode .btn-outline-danger:hover {
+    color: #ffffff !important;
+    background: #dc3545 !important;
+    border-color: #dc3545 !important;
+}
+
+/* Letiltott gombok */
+.dark-mode .btn:disabled,
+.dark-mode .btn.disabled,
+.dark-mode button:disabled,
+.dark-mode button.disabled {
+    background: #6c757d !important;
+    color: #ffffff !important;
+    border-color: #6c757d !important;
+    opacity: 0.65 !important;
+    cursor: not-allowed !important;
+}
+
+/* Táblázatok dark mode */
+.dark-mode table {
+    background: #2c3e50 !important;
+    color: #ffffff !important;
+    border-collapse: collapse !important;
+}
+
+.dark-mode th {
+    background: #34495e !important;
+    color: #ffffff !important;
+    padding: 8px !important;
+}
+
+.dark-mode td {
+    background: #2c3e50 !important;
+    color: #ffffff !important;
+    border: 1px solid #465c71 !important;
+    padding: 8px !important;
+}
+
+.dark-mode tr:nth-child(even) td {
+    background: #34495e !important;
+}
+
+.dark-mode tr:hover td {
+    background: #3d4c5f !important;
+}
+
+/* Warning box dark mode */
+.dark-mode .warning-box {
+    background: #34495e !important;
+    border-color: #465c71 !important;
+    color: #ffffff !important;
+}
+
+/* Modal és overlay stílusok dark mode-ban */
+.dark-mode .modal-overlay,
+.dark-mode .modal-backdrop,
+.dark-mode div[class*="modal-background"],
+.dark-mode .modal::before,
+.dark-mode .modal {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Általános modal stílusok - magasabb specificitással */
+.dark-mode div.modal,
+.dark-mode div.modal-dialog,
+.dark-mode div.modal-content,
+.dark-mode div.modal-container,
+.dark-mode div[class*="modal"] {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    z-index: 1001 !important;
+}
+
+/* Modal fejléc */
+.dark-mode div.modal-header,
+.dark-mode div[class*="modal"] .modal-header {
+    background: none !important;
+    border-bottom: none !important;
+    color: #ffffff !important;
+}
+
+/* Modal body */
+.dark-mode div.modal-body,
+.dark-mode div[class*="modal"] .modal-body {
+    background: none !important;
+    color: #ffffff !important;
+}
+
+/* Modal lábléc */
+.dark-mode div.modal-footer,
+.dark-mode div[class*="modal"] .modal-footer {
+    background: none !important;
+    border-top: none !important;
+}
+
+/* Form elemek a modálban */
+.dark-mode div[class*="modal"] input,
+.dark-mode div[class*="modal"] select,
+.dark-mode div[class*="modal"] textarea {
+    background: none !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Modal bezáró gomb */
+.dark-mode .modal-close,
+.dark-mode .close {
+    color: #ffffff !important;
+    opacity: 0.7 !important;
+    background: none !important;
+}
+
+/* Modal opciók */
+.dark-mode .modal-options {
+    background: none !important;
+}
+
+/* Option gombok */
+.dark-mode .option-btn {
+    background: none !important;
+    border: 1px solid #ffffff !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .option-btn:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Form gombok a modálban */
+.dark-mode .modal .form-buttons {
+    background: none !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Team members select a modálban */
+.dark-mode .modal .team-members-select {
+    background: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.dark-mode .modal .member-card {
+    background: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.dark-mode .modal .member-card:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark-mode .modal input[type="checkbox"]:checked + .member-card {
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Form elemek a modálban */
+.dark-mode .modal select,
+.dark-mode .modal input[type="date"],
+.dark-mode .modal textarea {
+    background: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .modal select:focus,
+.dark-mode .modal input[type="date"]:focus,
+.dark-mode .modal textarea:focus {
+    border-color: #3498db !important;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2) !important;
+}
+
+/* Menü elemek dark mode */
+.dark-mode .menu-item {
+    color: #ffffff !important;
+}
+
+.dark-mode .menu-item:hover {
+    background: #34495e !important;
+}
+
+.dark-mode .menu-item.active {
+    background: #34495e !important;
+    border-left-color: #3498db !important;
+}
+
+/* Veszélyes műveletek menüpontja */
+.dark-mode .menu-item.danger {
+    color: #dc3545 !important;
+}
+
+.dark-mode .menu-item.danger:hover {
+    background: #34495e !important;
+    border-left-color: #dc3545 !important;
+}
+
+/* HR elemek dark mode */
+.dark-mode hr {
+    border-color: #465c71 !important;
+}
+
+/* Link színek dark mode-ban */
+.dark-mode a:not(.btn):not(.details-btn):not(.nav-btn):not(.info-btn) {
+    color: #3498db !important;
+}
+
+.dark-mode a:not(.btn):not(.details-btn):not(.nav-btn):not(.info-btn):hover {
+    color: #5dade2 !important;
+}
+
+/* Címek és szövegek dark mode-ban */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p,
+.dark-mode span,
+.dark-mode label {
+    color: #ffffff !important;
+}
+
+/* Egyéb szöveges elemek */
+.dark-mode .main-title,
+.dark-mode .section-title,
+.dark-mode .mode-status {
+    color: #ffffff !important;
+}
+
+/* Profil oldal dark mode */
+.dark-mode .profile-section,
+.dark-mode .profile-info,
+.dark-mode .profile-details,
+.dark-mode .profile-data,
+.dark-mode .profile-form,
+.dark-mode .company-info,
+.dark-mode .personal-info,
+.dark-mode .user-info,
+.dark-mode .info-section,
+.dark-mode .data-section,
+.dark-mode .form-section,
+.dark-mode .input-section,
+.dark-mode .details-box,
+.dark-mode .profile-box,
+.dark-mode .info-box,
+.dark-mode .white-container,
+.dark-mode .data-container {
+    background: transparent !important;
+    color: #ffffff !important;
+    border-color: #465c71 !important;
+}
+
+/* Profil input mezők dark mode */
+.dark-mode .profile-input,
+.dark-mode .info-input,
+.dark-mode input[type="text"],
+.dark-mode input[type="email"],
+.dark-mode input[type="tel"],
+.dark-mode input[type="number"],
+.dark-mode select.form-control,
+.dark-mode .form-control {
+    background: #34495e !important;
+    color: #ffffff !important;
+    border: 1px solid #465c71 !important;
+}
+
+/* Profil státusz select dark mode */
+.dark-mode select,
+.dark-mode select option {
+    background: #34495e !important;
+    color: #ffffff !important;
+}
+
+/* Profil kép konténer dark mode */
+.dark-mode .profile-image-container,
+.dark-mode .avatar-container,
+.dark-mode .image-container {
+    background: #34495e !important;
+    border-color: #465c71 !important;
+}
+
+/* Profil címkék dark mode */
+.dark-mode .profile-label,
+.dark-mode .info-label,
+.dark-mode .form-label {
+    color: #ffffff !important;
+}
+
+/* Profil szerkesztő ikonok dark mode */
+.dark-mode .edit-icon,
+.dark-mode .copy-icon,
+.dark-mode .action-icon {
+    filter: brightness(0) invert(1) !important;
+}
+
+/* Szövegek színének felülírása */
+.dark-mode *,
+.dark-mode input,
+.dark-mode select,
+.dark-mode textarea,
+.dark-mode label,
+.dark-mode span,
+.dark-mode p,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode div,
+.dark-mode td,
+.dark-mode th,
+.dark-mode li,
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder,
+.dark-mode [class*="text"],
+.dark-mode [class*="title"],
+.dark-mode [class*="label"],
+.dark-mode [class*="heading"] {
+    color: #ffffff !important;
+}
+
+/* Input mezők placeholder szövege */
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Veszélyes műveletek szövegszíne */
+.dark-mode .danger,
+.dark-mode .text-danger,
+.dark-mode .menu-item.danger {
+    color: #dc3545 !important;
+}
+
+/* Dropdown menü elemek dark mode */
+.dark-mode .dropdown-content *,
+.dark-mode .dropdown-menu *,
+.dark-mode .user-dropdown *,
+.dark-mode [class*="dropdown"] *,
+.dark-mode .dropdown-item,
+.dark-mode .menu-dropdown * {
+    color: #ffffff !important;
+    background-color: #2c3e50 !important;
+}
+
+.dark-mode .dropdown-content a,
+.dark-mode .dropdown-menu a,
+.dark-mode .dropdown-item,
+.dark-mode .menu-dropdown a {
+    color: #ffffff !important;
+    background-color: #2c3e50 !important;
+    padding: 12px 16px !important;
+}
+
+.dark-mode .dropdown-content a:hover,
+.dark-mode .dropdown-menu a:hover,
+.dark-mode .dropdown-item:hover,
+.dark-mode .menu-dropdown a:hover {
+    background-color: #34495e !important;
+    color: #3498db !important;
+}
+
+/* Ikon színek a dropdown menüben */
+.dark-mode .dropdown-content i,
+.dark-mode .dropdown-menu i,
+.dark-mode .menu-dropdown i,
+.dark-mode [class*="dropdown"] i {
+    color: #ffffff !important;
+}
+
+/* Aktív dropdown elem */
+.dark-mode .dropdown-content .active,
+.dark-mode .dropdown-menu .active,
+.dark-mode .dropdown-item.active {
+    background-color: #34495e !important;
+    color: #3498db !important;
+}
+
+/* Profil dropdown specifikus stílusok */
+.dark-mode .profile-dropdown .dropdown-menu {
+    background: #2c3e50 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+    min-width: 200px !important;
+    margin-top: 12px !important;
+    padding: 8px 0 !important;
+}
+
+.dark-mode .profile-dropdown .dropdown-menu a {
+    color: #ffffff !important;
+    padding: 10px 16px !important;
+    text-decoration: none !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    font-size: 0.95rem !important;
+    white-space: nowrap !important;
+}
+
+.dark-mode .profile-dropdown .dropdown-menu a:hover {
+    background-color: #34495e !important;
+    color: #3498db !important;
+}
+
+/* Profil dropdown elválasztó vonal */
+.dark-mode .profile-dropdown .dropdown-menu hr {
+    margin: 8px 0 !important;
+    border: none !important;
+    border-top: 1px solid #465c71 !important;
+}
+
+/* Profil dropdown ikonok */
+.dark-mode .profile-dropdown .dropdown-menu i {
+    width: 20px !important;
+    text-align: center !important;
+    font-size: 16px !important;
+    color: #ffffff !important;
+}
+
+/* Beállítások oldal dark mode specifikus stílusok */
+.dark-mode .settings-layout {
+    border-color: #465c71 !important;
+}
+
+/* Beállítások menü elemek */
+.dark-mode .settings-menu {
+    background: transparent !important;
+    border: 1px solid #465c71 !important;
+}
+
+.dark-mode .menu-item {
+    border-left: 4px solid transparent !important;
+}
+
+.dark-mode .menu-item:hover {
+    background: #34495e !important;
+    border-left-color: #3498db !important;
+}
+
+.dark-mode .menu-item.active {
+    background: #34495e !important;
+    border-left-color: #3498db !important;
+}
+
+/* Fiók törlése menüpont - eltávolítjuk a piros hátteret */
+.dark-mode .menu-item.danger {
+    background: #2c3e50 !important;
+    border-top: 1px solid #465c71 !important;
+    color: #dc3545 !important;
+}
+
+.dark-mode .menu-item.danger:hover {
+    background: #34495e !important;
+}
+
+/* Beállítások tartalom szekció */
+.dark-mode .settings-content {
+    background: transparent !important;
+    border: 1px solid #465c71 !important;
+}
+
+/* Beállítások szekciók közötti elválasztó vonalak */
+.dark-mode .content-section {
+    border-bottom: 1px solid #465c71 !important;
+}
+
+/* Főcím alatti vonal */
+.dark-mode .main-title {
+    border-bottom: 2px solid #465c71 !important;
+}
+
+/* Form csoportok közötti térköz és elválasztás */
+.dark-mode .form-group {
+    border-bottom: 1px solid #465c71 !important;
+    margin-bottom: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+
+/* Utolsó form csoport ne kapjon alsó szegélyt */
+.dark-mode .form-group:last-child {
+    border-bottom: none !important;
+}
+
+/* Vezérlőpult (Dashboard) dark mode stílusok */
+.dark-mode .dashboard-content {
+    background-color: transparent !important;
+}
+
+/* Dashboard címsor */
+.dark-mode .dashboard-content h1 {
+    color: #ffffff !important;
+    text-shadow: none !important;
+}
+
+/* Kártya stílusok */
+.dark-mode .dashboard-cards .card {
+    background: transparent !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid #333333 !important;
+    transition: transform 0.2s ease-in-out !important;
+}
+
+.dark-mode .dashboard-cards .card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark-mode .dashboard-cards .card h2 {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+}
+
+/* Számláló stílusok */
+.dark-mode .dashboard-cards .number {
+    color: #5dade2 !important;
+    text-shadow: 0 2px 4px rgba(93, 173, 226, 0.2) !important;
+    font-weight: bold !important;
+}
+
+/* Események szekció */
+.dark-mode .events-section {
+    background: transparent !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid #333333 !important;
+    padding: 20px !important;
+}
+
+.dark-mode .events-section h2 {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    margin-bottom: 20px !important;
+}
+
+/* Események táblázat */
+.dark-mode .events-table th {
+    background-color: #333333 !important;
+    color: #ffffff !important;
+    border-bottom: 2px solid #404040 !important;
+}
+
+.dark-mode .events-table td {
+    border-bottom: 1px solid #333333 !important;
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .events-table tr:hover {
+    background-color: #2a2a2a !important;
+}
+
+/* Üres állapot üzenet */
+.dark-mode .events-table tr td[colspan] {
+    color: #888888 !important;
+    text-align: center !important;
+    padding: 20px !important;
+}
+
+/* Üdvözlő üzenet */
+.dark-mode .welcome-alert {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid #465c71 !important;
+    font-weight: 500 !important;
+}
+
+/* Animációk megtartása sötét módban */
+.dark-mode .number {
+    animation: countUp 0.5s ease-out forwards !important;
+}
+
+@keyframes countUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Reszponzív viselkedés megtartása */
+@media (max-width: 768px) {
+    .dark-mode .events-section {
+        background: #2c3e50 !important;
+        border: 1px solid #465c71 !important;
+    }
+}
+
+/* Kártya stílusok kiemeléshez */
+.dark-mode .dashboard-cards .card.highlight {
+    background: transparent !important;
+    border: 1px solid #3498db !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.dark-mode .dashboard-cards .card.highlight::before {
+    content: '🎉 Szép munka!' !important;
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+    font-size: 14px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    padding: 5px 10px !important;
+    border-radius: 4px !important;
+    animation: fadeInOut 2s infinite !important;
+}
+
+.dark-mode .dashboard-cards .card.highlight .number {
+    color: #ffffff !important;
+    font-size: 52px !important;
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.3) !important;
+}
+
+.dark-mode .dashboard-cards .card.highlight h2 {
+    color: #ffffff !important;
+}
+
+.dark-mode .dashboard-cards .card.highlight .details-btn {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.dark-mode .dashboard-cards .card.highlight .details-btn:hover {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0.7; }
+    50% { opacity: 1; }
+    100% { opacity: 0.7; }
+}
+
+/* Státusz színek dark mode-ban */
+.dark-mode .status {
+    font-weight: 500 !important;
+}
+
+.dark-mode .status-raktaron,
+.dark-mode .raktaron {
+    color: #4CAF50 !important; /* Zöld */
+    text-shadow: 0 0 10px rgba(76, 175, 80, 0.3) !important;
+}
+
+.dark-mode .status-kiadva,
+.dark-mode .kiadva {
+    color: #FF9800 !important; /* Narancssárga */
+    text-shadow: 0 0 10px rgba(255, 152, 0, 0.3) !important;
+}
+
+.dark-mode .status-karbantartas,
+.dark-mode .karbantartas {
+    color: #f44336 !important; /* Piros */
+    text-shadow: 0 0 10px rgba(244, 67, 54, 0.3) !important;
+}
+
+.dark-mode .status-javitas,
+.dark-mode .javitas {
+    color: #E91E63 !important; /* Rózsaszín */
+    text-shadow: 0 0 10px rgba(233, 30, 99, 0.3) !important;
+}
+
+.dark-mode .status-torolt,
+.dark-mode .torolt {
+    color: #9E9E9E !important; /* Szürke */
+}
+
+/* Státusz badge-ek ha vannak */
+.dark-mode .status-badge {
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+    font-weight: 500 !important;
+}
+
+.dark-mode .status-badge.raktaron {
+    background-color: rgba(76, 175, 80, 0.2) !important;
+    color: #4CAF50 !important;
+    border: 1px solid rgba(76, 175, 80, 0.3) !important;
+}
+
+.dark-mode .status-badge.kiadva {
+    background-color: rgba(255, 152, 0, 0.2) !important;
+    color: #FF9800 !important;
+    border: 1px solid rgba(255, 152, 0, 0.3) !important;
+}
+
+.dark-mode .status-badge.karbantartas {
+    background-color: rgba(244, 67, 54, 0.2) !important;
+    color: #f44336 !important;
+    border: 1px solid rgba(244, 67, 54, 0.3) !important;
+}
+
+.dark-mode .status-badge.javitas {
+    background-color: rgba(233, 30, 99, 0.2) !important;
+    color: #E91E63 !important;
+    border: 1px solid rgba(233, 30, 99, 0.3) !important;
+}
+
+.dark-mode .status-badge.torolt {
+    background-color: rgba(158, 158, 158, 0.2) !important;
+    color: #9E9E9E !important;
+    border: 1px solid rgba(158, 158, 158, 0.3) !important;
+}
+
+/* Kedvencek kezelése dark mode-ban */
+.dark-mode .favorite-btn {
+    color: #ffffff !important;
+    background: transparent !important;
+    border: none !important;
+    font-size: 20px !important;
+    cursor: pointer !important;
+    transition: transform 0.2s ease !important;
+}
+
+.dark-mode .favorite-btn:hover {
+    transform: scale(1.2) !important;
+}
+
+.dark-mode .favorite-btn.active {
+    color: #ffd700 !important; /* Arany szín a kedvenceknek */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5) !important;
+}
+
+/* Kedvenc sorok háttérszíne */
+.dark-mode tr.favorite-row {
+    background-color: rgba(255, 215, 0, 0.05) !important;
+}
+
+.dark-mode tr.favorite-row:hover {
+    background-color: rgba(255, 215, 0, 0.1) !important;
+}
+
+/* Kedvenc sor cellái */
+.dark-mode tr.favorite-row td {
+    border-color: rgba(255, 215, 0, 0.2) !important;
+}
+
+/* Tutorial Modal specifikus stílusok - magasabb specificitással */
+.dark-mode div#tutorialModal .modal-content,
+.dark-mode div.tutorialModal .modal-content {
+    background-color: #2c3e50 !important;
+    border-color: #3d556c !important;
+}
+
+.dark-mode div#tutorialModal .modal-header,
+.dark-mode div.tutorialModal .modal-header {
+    background-color: #34495e !important;
+    border-bottom-color: #3d556c !important;
+}
+
+.dark-mode div#tutorialModal .modal-body,
+.dark-mode div.tutorialModal .modal-body {
+    background-color: #2c3e50 !important;
+}
+
+.dark-mode div#tutorialModal .modal-footer,
+.dark-mode div.tutorialModal .modal-footer {
+    background-color: #34495e !important;
+    border-top-color: #3d556c !important;
+} 
+
+.dark-mode div#writtenTutorialModal .modal-content,
+.dark-mode div.writtenTutorialModal .modal-content {
+    background-color: #2c3e50 !important;
+    border-color: #3d556c !important;
+}
+
+.dark-mode div#writtenTutorialModal .modal-header,
+.dark-mode div.writtenTutorialModal .modal-header {
+    background-color: #34495e !important;
+    border-bottom-color: #3d556c !important;
+}
+
+.dark-mode div#writtenTutorialModal .modal-body,
+.dark-mode div.writtenTutorialModal .modal-body {
+    background-color: #2c3e50 !important;
+}
+
+.dark-mode div#writtenTutorialModal .modal-footer,
+.dark-mode div.writtenTutorialModal .modal-footer {
+    background-color: #34495e !important;
+    border-top-color: #3d556c !important;
+}
+
+.dark-mode .company-details {
+    background: #2c3e50 !important;
+    color: #ffffff !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+.dark-mode .company-details p {
+    border-bottom: 1px solid #465c71 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .company-details strong {
+    color: #ffffff !important;
+}
+
+.dark-mode .company-details p:last-child {
+    border-bottom: none !important;
+}
+
+.dark-mode .company-logo-container {
+    background: #34495e !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Naptár dark mode stílusok */
+.dark-mode .calendar-container,
+.dark-mode .fc-view-container,
+.dark-mode .fc-view,
+.dark-mode .fc-body,
+.dark-mode .fc-row,
+.dark-mode .fc-content-skeleton,
+.dark-mode .fc-day-grid {
+    background: #2c3e50 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .fc-day,
+.dark-mode .fc-day-top,
+.dark-mode .fc-day-number,
+.dark-mode .fc-day-header,
+.dark-mode .fc-axis {
+    background: #34495e !important;
+    color: #ffffff !important;
+    border-color: #465c71 !important;
+}
+
+.dark-mode .fc-today {
+    background: #3d566e !important;
+}
+
+.dark-mode .fc-event {
+    background: #3498db !important;
+    border-color: #2980b9 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .fc-button {
+    background: #3498db !important;
+    border-color: #2980b9 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .fc-button:hover {
+    background: #2980b9 !important;
+}
+
+.dark-mode .fc-button-active {
+    background: #2980b9 !important;
+}
+
+.dark-mode .fc-toolbar h2 {
+    color: #ffffff !important;
+}
+
+.dark-mode .fc-unthemed td,
+.dark-mode .fc-unthemed th {
+    border-color: #465c71 !important;
+}
+
+.dark-mode .fc-highlight {
+    background: #3d566e !important;
+}
+
+.dark-mode .fc-other-month {
+    background: #2c3e50 !important;
+    opacity: 0.7 !important;
+}
+
+/* Naptár fejléc */
+.dark-mode .fc-head,
+.dark-mode .fc-head-container {
+    background: #34495e !important;
+    border-color: #465c71 !important;
+}
+
+/* Naptár esemény tooltips */
+.dark-mode .fc-tooltip,
+.dark-mode .fc-popover {
+    background: #34495e !important;
+    border-color: #465c71 !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Naptár navigációs gombok */
+.dark-mode .fc-prev-button,
+.dark-mode .fc-next-button {
+    background: #3498db !important;
+    border-color: #2980b9 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .fc-prev-button:hover,
+.dark-mode .fc-next-button:hover {
+    background: #2980b9 !important;
+}
+
+/* Naptár grid és cellák dark mode stílusok */
+.dark-mode .calendar-grid {
+    background: #2c3e50 !important;
+    border-color: #465c71 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .calendar-cell {
+    background: #34495e !important;
+    border: 1px solid #465c71 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .calendar-cell:hover {
+    background: #3d566e !important;
+}
+
+.dark-mode .calendar-cell.today {
+    background: #3d566e !important;
+    border: 2px solid #3498db !important;
+}
+
+.dark-mode .calendar-cell.selected {
+    background: #3498db !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .calendar-cell.other-month {
+    background: #2c3e50 !important;
+    opacity: 0.7 !important;
+}
+
+.dark-mode .calendar-filters {
+    background: none !important;
+    box-shadow: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.dark-mode .filter-button {
+    background: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .filter-button:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: #ffffff !important;
+}
+
+.dark-mode .filter-button.active {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: #ffffff !important;
+}
+
+.dark-mode .filter-toggle {
+    background: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .filter-toggle:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: #ffffff !important;
+}
+
+.dark-mode .filter-content {
+    background: none !important;
+}

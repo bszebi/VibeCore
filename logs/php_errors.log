@@ -1,0 +1,44 @@
+[11-Apr-2025 15:31:40 Europe/Berlin] Session ID: u4f1fl56h0e8a1o56enb8jqc88
+[11-Apr-2025 15:31:40 Europe/Berlin] Session Cookie Path: /Vizsga_oldal
+[11-Apr-2025 15:31:40 Europe/Berlin] Session Status: 2
+[11-Apr-2025 15:31:40 Europe/Berlin] Session Content: Array
+(
+    [last_activity] => 1744378300
+    [created] => 1744378300
+    [user_id] => 1
+    [user_name] => Sebastián Balga
+    [email] => bszebi@icloud.com
+    [user_role] => Cég tulajdonos
+    [company_id] => 2
+    [language] => hu
+    [success] => A munka sikeresen létrehozva!
+)
+
+[11-Apr-2025 15:31:40 Europe/Budapest] PHP Warning:  require(../email/phpmailer/src/Exception.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Vizsga_oldal\includes\api\send_invitation.php on line 21
+[11-Apr-2025 15:31:40 Europe/Budapest] PHP Fatal error:  Uncaught Error: Failed opening required '../email/phpmailer/src/Exception.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Vizsga_oldal\includes\api\send_invitation.php:21
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Vizsga_oldal\includes\api\send_invitation.php on line 21
+[11-Apr-2025 20:02:22 Europe/Berlin] Session ID: u4f1fl56h0e8a1o56enb8jqc88
+[11-Apr-2025 20:02:22 Europe/Berlin] Session Cookie Path: /Vizsga_oldal
+[11-Apr-2025 20:02:22 Europe/Berlin] Session Status: 2
+[11-Apr-2025 20:02:22 Europe/Berlin] Session Content: Array
+(
+    [last_activity] => 1744394542
+    [created] => 1744394542
+    [user_id] => 1
+    [user_name] => Sebastián Balga
+    [email] => bszebi@icloud.com
+    [user_role] => Cég tulajdonos
+    [company_id] => 2
+    [language] => hu
+    [success] => A munka sikeresen létrehozva!
+)
+
+[11-Apr-2025 20:02:22 Europe/Budapest] PHP Fatal error:  Uncaught Error: Class "Database" not found in C:\xampp\htdocs\Vizsga_oldal\includes\api\send_invitation.php:56
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Vizsga_oldal\includes\api\send_invitation.php on line 56
+[22-Apr-2025 13:35:11 Europe/Budapest] Role update request started
+[22-Apr-2025 13:35:11 Europe/Budapest] Received user_id: 3, new_role: Hangtechnikus
+[22-Apr-2025 13:35:11 Europe/Budapest] Uncaught Exception: Class "Database" not found in C:\xampp\htdocs\Vizsga_oldal\includes\update_role.php on line 48

@@ -1,0 +1,6 @@
+[26-Apr-2025 13:43:07 Europe/Budapest] Project deletion error: Cannot delete or update a parent row: a foreign key constraint fails (`vizsgaremek`.`user_to_work`, CONSTRAINT `user_to_work_ibfk_1` FOREIGN KEY (`work_id`) REFERENCES `work` (`id`))
+[26-Apr-2025 13:44:02 Europe/Budapest] PHP Warning:  mysqli_stmt::bind_param(): Argument #2 must be passed by reference, value given in C:\xampp\htdocs\Vizsga_oldal\api\delete_project.php on line 66
+[26-Apr-2025 13:44:02 Europe/Budapest] Project deletion error: Table 'vizsgaremek.logged_event' doesn't exist
+[26-Apr-2025 13:45:00 Europe/Budapest] PHP Warning:  mysqli_stmt::bind_param(): Argument #2 must be passed by reference, value given in C:\xampp\htdocs\Vizsga_oldal\api\delete_project.php on line 66
+[26-Apr-2025 13:45:00 Europe/Budapest] Project deletion error: Cannot delete or update a parent row: a foreign key constraint fails (`vizsgaremek`.`work_history`, CONSTRAINT `work_history_ibfk_3` FOREIGN KEY (`project_id`) REFERENCES `project` (`id`))
+[26-Apr-2025 13:45:59 Europe/Budapest] PHP Warning:  mysqli_stmt::bind_param(): Argument #2 must be passed by reference, value given in C:\xampp\htdocs\Vizsga_oldal\api\delete_project.php on line 66
