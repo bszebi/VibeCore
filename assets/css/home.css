@@ -1,0 +1,1206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.header {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 0;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 20px;
+    margin-right: 0;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.login {
+    color: #2c3e50;
+    border: 2px solid #2c3e50;
+}
+
+.login:hover {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.register {
+    background-color: #2c3e50;
+    color: white;
+    border: 2px solid #2c3e50;
+}
+
+.register:hover {
+    background-color: #34495e;
+    border-color: #34495e;
+}
+
+.hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    margin-top: 80px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.features {
+    padding: 80px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #2c3e50;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.feature-content {
+    padding: 25px;
+}
+
+.feature-content h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.feature-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-section {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+}
+
+.about-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    color: #2c3e50;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.about-content p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 50px 20px 20px;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-section p, .footer-section a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.6);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.social-links img:hover {
+    opacity: 1;
+}
+
+.solutions {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.solution-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 850px;
+    transition: transform 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+}
+
+.solution-card:first-child {
+    align-self: flex-start;
+    margin-right: auto;
+    margin-left: -30px;
+    transform-origin: left center;
+}
+
+.solution-card:last-child {
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: -30px;
+    transform-origin: right center;
+}
+
+.solution-image {
+    flex: 0.6;
+    min-width: 220px;
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.solution-image img {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: contain;
+}
+
+.solution-content {
+    flex: 1.4;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.solution-content h3 {
+    color: #2c3e50;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.solution-content p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #666;
+    margin: 0;
+}
+
+.solution-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.solution-content ul li {
+    margin-bottom: 6px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 13px;
+    color: #555;
+}
+
+.learn-more {
+    font-size: 14px;
+    padding: 6px 12px;
+    display: inline-block;
+    margin-top: 10px;
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.learn-more:hover {
+    color: #2980b9;
+}
+
+/* Reszponzív design a solution cardokhoz */
+@media (max-width: 1440px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .solution-card:first-child {
+        margin-left: 0;
+    }
+    
+    .solution-card:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0 20px;
+        gap: 30px;
+    }
+    
+    .solution-card {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+        gap: 25px;
+    }
+
+    .solution-card,
+    .solution-card:first-child,
+    .solution-card:last-child {
+        align-self: center;
+        margin: 0 auto;
+        max-width: 450px;
+        flex-direction: column;
+    }
+
+    .solution-card:hover {
+        transform: translateY(-3px);
+    }
+    
+    .solution-image {
+        min-width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+    
+    .solution-content {
+        padding: 15px;
+    }
+
+    .section-header h2 {
+        font-size: 24px;
+    }
+
+    .section-header p {
+        font-size: 14px;
+    }
+}
+
+.why-us {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.benefit-card {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.stats {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('stats-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    color: white;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.stat-item p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Reszponzív design */
+@media (max-width: 768px) {
+    .solution-card {
+        flex-direction: column;
+    }
+    
+    .solution-card.reverse {
+        flex-direction: column;
+    }
+    
+    .solution-image {
+        min-width: 100%;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-content {
+        padding: 15px 10px;
+    }
+    
+    .auth-buttons a {
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Loading Screen Styles */
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out;
+}
+
+.loader-content {
+    text-align: center;
+    color: white;
+}
+
+.loader-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+}
+
+.loader-progress {
+    width: 200px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: #3498db;
+    border-radius: 3px;
+    animation: progress 2s ease-in-out forwards;
+}
+
+.loader-text {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* Prevent scrolling while loading */
+body.loading {
+    overflow: hidden;
+}
+
+/* Logo stílusok módosítása */
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.logo a:hover {
+    opacity: 0.9;
+}
+
+/* Navigációs menü középen */
+.nav-menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Alávonás effekt */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+}
+
+/* Hover effekt */
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Aktív link stílusa */
+.nav-link.active {
+    color: #3498db;
+}
+
+.nav-link.active::after {
+    width: 100%;
+    background-color: #3498db;
+}
+
+/* Hover effekt az aktív linken */
+.nav-link.active:hover::after {
+    background-color: #2980b9;
+}
+
+/* Rólunk oldal stílusok */
+.about-page {
+    padding-top: 80px;
+}
+
+.about-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('../img/about-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Kapcsolat oldal továbbfejlesztett stílusok */
+.contact-page {
+    padding-top: 80px;
+}
+
+.contact-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('../img/contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    margin-bottom: 50px;
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.contact-content {
+    padding: 0 20px 80px;
+}
+
+.contact-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+}
+
+/* Info kártyák stílusa */
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card .icon {
+    width: 50px;
+    height: 50px;
+    background: #3498db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.info-card .icon i {
+    color: white;
+    font-size: 20px;
+}
+
+.info-card h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.info-card p {
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Űrlap konténer stílusa */
+.contact-form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.form-header p {
+    color: #666;
+}
+
+/* Űrlap stílusok */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.submit-btn:hover {
+    background: #2980b9;
+}
+
+.submit-btn i {
+    font-size: 1rem;
+}
+
+/* Reszponzív design */
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-form-container {
+        padding: 30px 20px;
+    }
+}
+
+/* Modal stílusok */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: #333;
+}
+
+/* Vásárlási form stílusok */
+#purchaseForm .form-group {
+    margin-bottom: 20px;
+}
+
+#purchaseForm label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+#purchaseForm input[type="text"],
+#purchaseForm input[type="email"],
+#purchaseForm input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+#purchaseForm input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.payment-options {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.checkbox-label span {
+    line-height: 1.2;
+}
+
+.checkbox-label a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.checkbox-label a:hover {
+    text-decoration: underline;
+}
+
+/* Reszponzív igazítások */
+@media (max-width: 768px) {
+    .modal-content {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .payment-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Megrendelés oldal stílusok módosítása */
+.order-section {
+    padding: 120px 0 100px; /* Nagyobb padding felül és alul */
+    background-color: #f8f9fa;
+}
+
+.order-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px; /* Nagyobb margó alul */
+    padding: 0 20px;
+}
+
+.order-intro h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.order-intro p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.order-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    align-items: start;
+    padding: 0 20px;
+    position: relative;
+}
+
+.order-summary {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+    align-self: flex-start;
+}
+
+.package-details {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.package-details h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.package-details .price {
+    font-size: 1.5rem;
+    color: #3498db;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.package-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.package-details ul li {
+    padding: 6px 0;
+    color: #666;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+}
+
+.package-details ul li i {
+    color: #3498db;
+    margin-right: 8px;
+    font-size: 0.9rem;
+}
+
+.order-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 60px;
+    position: relative;
+}
+
+/* Görgetősáv stílusa a választott csomag panelhez */
+.order-summary::-webkit-scrollbar {
+    width: 6px;
+}
+
+.order-summary::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.order-summary::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.order-summary::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Reszponzív igazítások */
+@media (max-width: 992px) {
+    .order-section .container {
+        grid-template-columns: 1fr;
+    }
+
+    .order-summary {
+        position: relative;
+        top: 0;
+    }
+
+    .order-intro {
+        margin-bottom: 40px;
+    }
+
+    .order-form {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .order-intro h1 {
+        font-size: 2rem;
+    }
+
+    .order-intro p {
+        font-size: 1rem;
+    }
+}
+
+/* Adatok konténer stílusok */
+.data-containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.data-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.data-box h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.data-box h3 i {
+    color: #3498db;
+}
+
+.data-content {
+    display: grid;
+    gap: 15px;
+}
+
+.data-item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+}
+
+.data-item .label {
+    color: #666;
+    font-weight: 500;
+}
+
+.data-item .value {
+    color: #2c3e50;
+}
+
+.order-form-section {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.order-form-section h3 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Reszponzív igazítások */
+@media (max-width: 768px) {
+    .data-containers {
+        grid-template-columns: 1fr;
+    }
+}

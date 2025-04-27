@@ -1,0 +1,13 @@
+.profile-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ... többi header stílus ... */ 
